@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personal Details</title>
+    <link rel="stylesheet" href="style3.css">
+</head>
+<body>
+    <h1>Personal Details Form</h1>
+    <form id="personalDetailsForm" method="post" action="/">
+        <label for="address">Address:</label>
+        <input type="text" name="address" id="address" required>
+
+        <label for="date_of_birth">Date of Birth:</label>
+        <input type="date" name="date_of_birth" id="date_of_birth" required>
+
+        <label for="radio">Gender:</label>
+        <br>
+        <input type="radio" name="gender" value="Male"> Male
+        <input type="radio" name="gender" value="Female"> Female
+        <input type="radio" name="gender" value="Other"> Other
+        <br><br>
+
+        <div>
+            <label for="courseSelect">Select your Course</label>
+            <select id="courseSelect">  
+                <option value="Course">Course</option>  
+                <option value="BCA">BCA</option>  
+                <option value="BBA">BBA</option>  
+                <option value="B.Tech">B.Tech</option>  
+                <option value="MBA">MBA</option>  
+                <option value="MCA">MCA</option>  
+                <option value="M.Tech">M.Tech</option>  
+            </select>  
+        </div>  
+        <br>
+
+        <div id="markDetails"></div>
+        <br>
+        <h3>Marks Details</h3>
+        <table>
+            <tr>
+                <th>Subject</th>
+                <th>Marks</th>
+            </tr>
+            <tr>
+                <td>Maths</td>
+                <td>
+                    <fieldset class="rating">
+                        <input type="radio" id="mathsStar5" name="mathsMarks" value="5" required />Above 90 Percentage<label for="mathsStar5" title="5 stars"></label>
+                        <input type="radio" id="mathsStar4" name="mathsMarks" value="4" />Above 85 Percentage<label for="mathsStar4" title="4 stars"></label>
+                        <input type="radio" id="mathsStar3" name="mathsMarks" value="3" />Above 75 Percentage<label for="mathsStar3" title="3 stars"></label>
+                        <input type="radio" id="mathsStar2" name="mathsMarks" value="2" />Above 65 Percentage<label for="mathsStar2" title="2 stars"></label>
+                        <input type="radio" id="mathsStar1" name="mathsMarks" value="1" />Above 50 Percentage<label for="mathsStar1" title="1 star"></label>
+                    </fieldset>
+                </td>
+            </tr>
+            <tr>
+                <td>Science</td>
+                <td>
+                    <fieldset class="rating">
+                        <input type="radio" id="scienceStar5" name="scienceMarks" value="5" required />Above 90 Percentage<label for="scienceStar5" title="5 stars"></label>
+                        <input type="radio" id="scienceStar4" name="scienceMarks" value="4" />Above 85 Percentage<label for="scienceStar4" title="4 stars"></label>
+                        <input type="radio" id="scienceStar3" name="scienceMarks" value="3" />Above 75 Percentage<label for="scienceStar3" title="3 stars"></label>
+                        <input type="radio" id="scienceStar2" name="scienceMarks" value="2" />Above 65 Percentage<label for="scienceStar2" title="2 stars"></label>
+                        <input type="radio" id="scienceStar1" name="scienceMarks" value="1" />Above 50 Percentage<label for="scienceStar1" title="1 star"></label>
+                    </fieldset>
+                </td>
+            </tr>
+            <tr>
+                <td>English</td>
+                <td>
+                    <fieldset class="rating">
+                        <input type="radio" id="engllishStar5" name="englishMarks" value="5" required />Above 90 Percentage<label for="englishStar5" title="5 stars"></label>
+                        <input type="radio" id="englishStar4" name="englishMarks" value="4" />Above 85 Percentage<label for="englishStar4" title="4 stars"></label>
+                        <input type="radio" id="englishStar3" name="englishMarks" value="3" />Above 75 Percentage<label for="englishStar3" title="3 stars"></label>
+                        <input type="radio" id="englishStar2" name="englishMarks" value="2" />Above 65 Percentage<label for="englishStar2" title="2 stars"></label>
+                        <input type="radio" id="englishStar1" name="englishMarks" value="1" />Above 50 Percentage<label for="englishStar1" title="1 star"></label>
+                    </fieldset>
+                </td>
+            </tr>
+        </table>
+        <input type="submit" value="Submit">
+    </form>
+</body>
+</html>
